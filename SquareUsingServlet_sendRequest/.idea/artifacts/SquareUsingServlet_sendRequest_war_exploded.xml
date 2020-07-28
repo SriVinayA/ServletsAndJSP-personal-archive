@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="SquareUsingServlet_sendRequest:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/SquareUsingServlet_sendRequest_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="SquareUsingServlet_sendRequest/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="SquareUsingServlet_sendRequest" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
