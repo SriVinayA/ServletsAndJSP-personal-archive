@@ -8,6 +8,11 @@
   <servlet>
   <servlet-name>abc</servlet-name>
   <servlet-class>com.asv.MyServlet</servlet-class>
+  
+  <init-param>
+  <param-name>name</param-name>
+  <param-value>Appari</param-value>
+  </init-param>
   </servlet>
   
   <servlet-mapping>
@@ -17,12 +22,12 @@
   
   <context-param>
   <param-name>name</param-name>
-  <param-value>vinay</param-value>
+  <param-value>Vinay</param-value>
   </context-param>
   
   <context-param>
   <param-name>phone</param-name>
-  <param-value>realme</param-value>
+  <param-value>Realme</param-value>
   </context-param>
   
 </web-app>

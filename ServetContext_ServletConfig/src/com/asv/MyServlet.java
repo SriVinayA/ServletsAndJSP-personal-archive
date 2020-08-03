@@ -3,6 +3,7 @@ package com.asv;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+import javax.servlet.ServletConfig;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -15,8 +16,10 @@ public class MyServlet extends HttpServlet{
 		PrintWriter out = resp.getWriter();
 		out.println("Hi<br>");
 		
-		ServletContext ctx = getServletContext();
-		String str = ctx.getInitParameter("name");
+//		ServletContext ctx = getServletContext();
+//		String str = ctx.getInitParameter("phone");
+		ServletConfig cg = getServletConfig();
+		String str = cg.getInitParameter("name");
 		out.println(str);
 	}
 }
