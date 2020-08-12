@@ -12,16 +12,15 @@
 
 <body>
 
-	<!--
+	<%-- 	
 		<%
 			String name = request.getAttribute("label").toString();
 			out.println(name);
 		%>
-	-->
-
-	${label}<br>
-
-	<c:out value="Hello World" />
+	--%>
+	<c:forEach items="${students}" var="s">
+		${s.name} <br>
+	</c:forEach>
 
 </body>
 
