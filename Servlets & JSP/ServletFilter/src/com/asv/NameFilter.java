@@ -13,29 +13,29 @@ import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpServletRequest;
 
 /**
- * Servlet Filter implementation class IdFilter
+ * Servlet Filter implementation class NameFilter
  */
 @WebFilter("/addAlien")
-public class IdFilter implements Filter {
+public class NameFilter implements Filter {
 
 	public void destroy() {
-		// TODO Auto-generated method stub
+
 	}
 
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
 		
 		PrintWriter out = response.getWriter();
 		HttpServletRequest req = (HttpServletRequest) request;
-		int aid = Integer.parseInt(request.getParameter("aid"));
+		String aname = request.getParameter("aname");
 		
-		if(aid>1)
+		if(aname.length() > 3)
 			chain.doFilter(request, response);
 		else 
-			out.println("Invalid Input ID");
-			
+			out.println("Invalid Name");
+		
 	}
 
 	public void init(FilterConfig fConfig) throws ServletException {
-		
+
 	}
 }
