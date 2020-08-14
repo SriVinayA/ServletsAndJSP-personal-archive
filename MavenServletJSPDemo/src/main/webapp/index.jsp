@@ -1,9 +1,11 @@
 <html>
+
 <body>
-<h2>Hello World!</h2>
-    <form action="getGadget">
-        <input type="text" name="gid">
-        <input type="submit">
+    <h2>Hello World!</h2>
+    <form action="getAlien">
+        <input type="text" name="aid">
+        <input type="submit" value="Submit">
     </form>
 </body>
+
 </html>

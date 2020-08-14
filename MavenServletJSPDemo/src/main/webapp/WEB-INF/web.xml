@@ -5,11 +5,11 @@
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
     <servlet>
-        <servlet-name>GetGadgetController</servlet-name>
-        <servlet-class>com.asv.web.GetGadgetController</servlet-class>
+        <servlet-name>GetAlienController</servlet-name>
+        <servlet-class>com.example.web.GetAlienController</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>GetGadgetController</servlet-name>
-        <url-pattern>/getGadget</url-pattern>
+        <servlet-name>GetAlienController</servlet-name>
+        <url-pattern>/getAlien</url-pattern>
     </servlet-mapping>
 </web-app>
