@@ -48,6 +48,7 @@ public class Controller extends HttpServlet {
 			}
 		} else{
 			out.print("None Selected");
+			out.print("<br>");
 		}
 	}
 

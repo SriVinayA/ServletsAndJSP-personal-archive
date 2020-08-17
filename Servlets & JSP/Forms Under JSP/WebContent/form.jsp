@@ -43,10 +43,10 @@ div {
 <div>
   <form action="<%=request.getContextPath()%>/Controller" method="post">
     <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
 
     <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
 
     <label for="country">Country</label>
     <select id="country" name="country">
