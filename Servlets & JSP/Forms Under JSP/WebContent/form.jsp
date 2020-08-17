@@ -41,7 +41,7 @@ div {
 <body>
 
 <div>
-  <form action="submit.jsp" method="post">
+  <form action="<%=request.getContextPath()%>/Controller" method="post">
     <label for="fname">First Name</label>
     <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
